@@ -30,6 +30,18 @@ public class CalculatorTest {
     }
 
     @Test
+    @DisplayName("Testing Calculator#subtract with values [10, 7]")
+    @Disabled
+    void testSubtract2() {
+        Assertions.assertEquals(7, calculator.subtract(10, 3));
+    }
+    @RepeatedTest(3)
+    @DisplayName("Testing Calculator#subtract with values [11, 1]")
+    void testSubtract3() {
+        Assertions.assertEquals(10, calculator.subtract(11, 1));
+    }
+
+    @Test
     @DisplayName("Testing Calculator#multiply with values [10, 2, 3]")
     void testMultiply() {
         Assertions.assertNotNull(calculator.multiply(10, 2, 3));
