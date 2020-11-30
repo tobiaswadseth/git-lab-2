@@ -20,7 +20,7 @@ public class CalculatorTest {
     @Test
     @DisplayName("Testing Calculator#add with values [2, 3, 4, 1]")
     void testAddition() {
-        Assertions.assertEquals(10, calculator.add( 2, 3, 4, 1 ));
+        Assertions.assertEquals(12, calculator.add( 2, 3, 4, 1 ));
     }
 
     @Test
